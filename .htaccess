@@ -1,0 +1,15 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.chatresabz.co [NC]
+RewriteRule ^(.*)$ http://chatresabz.co/$1 [L,R=301,NC]
+
+ErrorDocument 404 /404.html
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^185\.10\.72\.152$
+RewriteRule ^(.*)$ http://chatresabz.co/$1 [L,R=301]
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^104\.21\.13\.46$
+RewriteRule ^(.*)$ http://chatresabz.co/$1 [L,R=301]
